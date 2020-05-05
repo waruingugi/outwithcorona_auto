@@ -1,0 +1,16 @@
+flake8
+psycopg2-binary==2.8.4
+retry
+
+python-dotenv
+
+dj-static
+
+gunicorn==19.9.0
+dj-database-url==0.5.0
+psycopg2-binary==2.8.4
+requests
+redis
+celery
+
+Django==2.2.7

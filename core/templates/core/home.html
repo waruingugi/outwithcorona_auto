@@ -1,0 +1,96 @@
+{% extends "core/layout.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+    <div class="row justify-content-center mt-1">
+        <div class="col">
+            <h4>KENYA</h4>
+            <hr>
+        </div>
+    </div>
+
+        <div class="row justify-content-center mb-3">
+            <div class="col-sm-5">
+                <div class="card mt-2 mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ latest_data.total_cases }}</h5>
+                        <hr>
+                        <p class="card-text">Total cases</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <div class="card mt-2 mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ latest_data.active_cases }}</h5>
+                        <hr>
+                        <p class="card-text">Active cases</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <div class="card mt-2 mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ latest_data.total_recovered }}</h5>
+                        <hr>
+                        <p class="card-text">Recovered cases</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <div class="card mt-2 mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ latest_data.new_cases }}</h5>
+                        <hr>
+                        <p class="card-text">New cases</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <div class="card mt-2 mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ latest_data.total_deaths }}</h5>
+                        <hr>
+                        <p class="card-text">Total deaths</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <div class="card mt-2 mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ latest_data.new_deaths|default:"0" }}</h5>
+                        <hr>
+                        <p class="card-text">New deaths</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <div class="card mt-2 mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ latest_data.total_cases_per1m }}</h5>
+                        <hr>
+                        <p class="card-text">In every 1 million</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <div class="card mt-2 mb-2">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ latest_data.total_recovered }}</h5>
+                        <hr>
+                        <p class="card-text">Total recovered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+{% endblock %}
