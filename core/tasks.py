@@ -22,9 +22,9 @@ def get_latest_stat_for_kenya():
     querystring = {"country":"Kenya"}
 
     headers = {
-        'x-rapidapi-host': "coronavirus-monitor.p.rapidapi.com",
+        'x-rapidapi-host': "covid-193.p.rapidapi.com",
         'x-rapidapi-key': "d901edfb17msh4441a5911a1f674p1994adjsn8397300b588f"
-        }
+    }
 
     response = requests.request("GET", url, headers=headers, params=querystring)
 
@@ -34,5 +34,5 @@ def get_latest_stat_for_kenya():
         cache.delete('latest_data') # Delete cached data if it exists
 
     cache.set(
-        'latest_data', response.json()['latest_stat_by_country'][0], None
+        'latest_data', response.json()['response'][0], None
     ) # Cache forever/until another update.

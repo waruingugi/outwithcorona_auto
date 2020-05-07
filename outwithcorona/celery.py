@@ -31,7 +31,7 @@ app.conf.beat_schedule = {
         # task name which we have created in tasks.py
         'task': 'get_latest_stat_for_kenya',
 
-        # execute twice a day
+        # execute every hour
         'schedule': crontab(minute=0, hour='*/1')
     }
 

@@ -14,7 +14,7 @@
             <div class="col-sm-5">
                 <div class="card mt-2 mb-2">
                     <div class="card-body">
-                        <h5 class="card-title">{{ latest_data.total_cases }}</h5>
+                        <h5 class="card-title">{{ cases.total }}</h5>
                         <hr>
                         <p class="card-text">Total cases</p>
                     </div>
@@ -24,7 +24,7 @@
             <div class="col-sm-5">
                 <div class="card mt-2 mb-2">
                     <div class="card-body">
-                        <h5 class="card-title">{{ latest_data.active_cases }}</h5>
+                        <h5 class="card-title">{{ cases.active}}</h5>
                         <hr>
                         <p class="card-text">Active cases</p>
                     </div>
@@ -34,7 +34,7 @@
             <div class="col-sm-5">
                 <div class="card mt-2 mb-2">
                     <div class="card-body">
-                        <h5 class="card-title">{{ latest_data.total_recovered }}</h5>
+                        <h5 class="card-title">{{ cases.recovered }}</h5>
                         <hr>
                         <p class="card-text">Recovered cases</p>
                     </div>
@@ -44,7 +44,7 @@
             <div class="col-sm-5">
                 <div class="card mt-2 mb-2">
                     <div class="card-body">
-                        <h5 class="card-title">{{ latest_data.new_cases }}</h5>
+                        <h5 class="card-title">{{ cases.new }}</h5>
                         <hr>
                         <p class="card-text">New cases</p>
                     </div>
@@ -54,7 +54,7 @@
             <div class="col-sm-5">
                 <div class="card mt-2 mb-2">
                     <div class="card-body">
-                        <h5 class="card-title">{{ latest_data.total_deaths }}</h5>
+                        <h5 class="card-title">{{ deaths.total }}</h5>
                         <hr>
                         <p class="card-text">Total deaths</p>
                     </div>
@@ -64,7 +64,7 @@
             <div class="col-sm-5">
                 <div class="card mt-2 mb-2">
                     <div class="card-body">
-                        <h5 class="card-title">{{ latest_data.new_deaths|default:"0" }}</h5>
+                        <h5 class="card-title">{{ deaths.new|default:"0" }}</h5>
                         <hr>
                         <p class="card-text">New deaths</p>
                     </div>
@@ -74,9 +74,9 @@
             <div class="col-sm-5">
                 <div class="card mt-2 mb-2">
                     <div class="card-body">
-                        <h5 class="card-title">{{ latest_data.total_cases_per1m }}</h5>
+                        <h5 class="card-title">{{ tests.total }}</h5>
                         <hr>
-                        <p class="card-text">In every 1 million</p>
+                        <p class="card-text">Tests done</p>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
             <div class="col-sm-5">
                 <div class="card mt-2 mb-2">
                     <div class="card-body">
-                        <h5 class="card-title">{{ latest_data.total_recovered }}</h5>
+                        <h5 class="card-title">{{ cases.recovered }}</h5>
                         <hr>
                         <p class="card-text">Total recovered</p>
                     </div>

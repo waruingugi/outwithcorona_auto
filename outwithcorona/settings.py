@@ -136,7 +136,7 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'Africa/Nairobi'
 
-ENDPOINT_URL = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/latest_stat_by_country.php"
+ENDPOINT_URL = "https://covid-193.p.rapidapi.com/statistics"
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files

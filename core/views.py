@@ -24,11 +24,17 @@ def home(request):
 
     latest_data = cache.get('latest_data')
 
+    cases = latest_data['cases']
+    deaths = latest_data['deaths']
+    tests = latest_data['tests']
+
     return render(
         request,
         'core/home.html',
         {
             'title': 'Results',
-            'latest_data': latest_data
+            'cases': cases,
+            'deaths': deaths,
+            'tests': tests
         }
     )
