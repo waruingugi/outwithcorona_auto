@@ -13,4 +13,4 @@ requests
 redis
 celery
 
-Django==2.2.7
+Django==2.2.18
